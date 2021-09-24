@@ -12,5 +12,8 @@ The inputs required are:
 
 The program returns whether or not that car can be on the road.
 
+Note: The rules for time boundaries are not current. But can easily be adapted.
+
+
 ## To run
 To run the app, just open index.html on a modern browser.
