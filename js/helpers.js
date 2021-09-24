@@ -1,6 +1,6 @@
 // Checks if time is in restriction range
 function checkTimeInRange(boundaries, time) {
-    return (time >= boundaries[0] && time < boundaries[1]);
+    return ((time >= boundaries[0] && time < boundaries[1]) || (time >= boundaries[2] && time < boundaries[3]));
 }
 
 // Checks if rules are in force
@@ -13,7 +13,7 @@ function checkRulesExpiration(expiration, date) {
 }
 
 // Checks if licence plate number is among the restricted ones
-function checkIfRestricion(daysList, prohibition, number, date) {
+function checkIfRestricted(daysList, prohibition, number, date) {
     let dateToPredict = date + "T05:00:00Z";
     dateToPredict = new Date(dateToPredict);
     let day = dateToPredict.getDay().toString();
@@ -50,6 +50,6 @@ function assignMessage(messages, value) {
             message = messages['invalidPlate'];
             break;
     }
-    
+
     return message;
 }

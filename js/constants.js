@@ -17,7 +17,7 @@ const rules = {
         FRIDAY: [0,1,8,9]
     },
     expiration: '2021-09-30',
-    hours: ['07:00','19:00']
+    hours: ['07:00','09:30','16:00','19:30']
 }
 
 const messages = {
