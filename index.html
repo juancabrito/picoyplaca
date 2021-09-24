@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predict Pico y Placa</title>
+    <title>Pico y Placa</title>
+    <script src="js/constants.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/tests.js"></script>
     <script src="js/picoPlacaPredictor.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <h1 class="predictor--title">Pico y Placa Predictor</h1>
     <section id="predictor" class="predictor">
-        <input type="text" name="plate" id="plate" class="predictor--plate">
-        <input type="date" name="date" id="date">
-        <input type="time" name="time" id="time">
-        <button onclick="run();">Predict</button>
-        <div id="response" class="predictor--response">
-        </div>
+        <input type="text" name="plate" id="plate" placeholder="Licence plate here" class="predictor--plate">
+        <input type="date" name="date" id="date" class="predictor--date">
+        <input type="time" name="time" id="time" class="predictor--time">
         
+        <button onclick="run();" class="predictor--action">Predict</button>
     </section>
+    <div id="response" class="predictor--response">
+    </div>
 </body>
 </html>
