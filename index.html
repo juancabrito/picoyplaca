@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Pico y Placa</title>
+    <script src="js/picoPlacaPredictor.js"></script>
+</head>
+<body>
+    <section id="predictor" class="predictor">
+        <input type="text" name="plate" id="plate" class="predictor--plate">
+        <input type="date" name="date" id="date">
+        <input type="time" name="time" id="time">
+        <button onclick="run();">Predict</button>
+        <div id="response" class="predictor--response">
+        </div>
+        
+    </section>
+</body>
+</html>
