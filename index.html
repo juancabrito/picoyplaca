@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predict Pico y Placa</title>
+    <title>Pico y Placa</title>
+    <script src="js/constants.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/tests.js"></script>
     <script src="js/picoPlacaPredictor.js"></script>
 </head>
 <body>
@@ -12,10 +15,11 @@
         <input type="text" name="plate" id="plate" class="predictor--plate">
         <input type="date" name="date" id="date">
         <input type="time" name="time" id="time">
+        
         <button onclick="run();">Predict</button>
+
         <div id="response" class="predictor--response">
         </div>
-        
     </section>
 </body>
 </html>
