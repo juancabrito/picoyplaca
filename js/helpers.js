@@ -13,7 +13,7 @@ function checkRulesExpiration(expiration, date) {
 }
 
 // Checks if licence plate number is among the restricted ones
-function checkIfRestricted(daysList, prohibition, number, date) {
+function checkIfRestricion(daysList, prohibition, number, date) {
     let dateToPredict = date + "T05:00:00Z";
     dateToPredict = new Date(dateToPredict);
     let day = dateToPredict.getDay().toString();
@@ -50,5 +50,6 @@ function assignMessage(messages, value) {
             message = messages['invalidPlate'];
             break;
     }
+    
     return message;
 }
